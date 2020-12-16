@@ -21,6 +21,7 @@ import TodoList from './components/patients/ToDoList/ToDoList';
 import Chat from './components/chatRoom/components/Chat/Chat';
 import SignIn from './components/chatRoom/components/Join/Join';
 import Appointments from './components/Appointments/Appointments';
+import DoctorContacts from './components/DoctorContacts';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/join" exact component={SignIn} />
           <Route path="/to-do-list" exact component={TodoList} />
           <Route path="/appointments" exact component={Appointments} />
+          <Route path="/doctorContacts" exact component={DoctorContacts} />
         </Switch>
       </Router>
     </div>

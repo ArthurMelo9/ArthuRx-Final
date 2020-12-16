@@ -3,6 +3,10 @@ import { Navbar, Nav, Card, CardDeck, Container, Button } from 'react-bootstrap'
 import Comm from '../home/images/comm.jpg';
 import Diagnose from '../home/images/diagnose.jpg'
 import Tele from '../home/images/tele.png';
+import todo from '../home/images/todo.png';
+import todo2 from '../home/images/todo2.jpg';
+import todo1 from '../home/images/todo1.jpg';
+import todo3 from '../home/images/todo3.jpg';
 import { useHistory } from 'react-router-dom';
 import fire from './fire';
 
@@ -54,7 +58,7 @@ const PatientsPortal = (props) => {
                          </Card.Text>
                             <Card.Link href="#"></Card.Link>
                             <hr />
-                            <Card.Link href="#">Speak to a doctor, book an appointment...</Card.Link>
+                            <Card.Link href="/doctorContacts">Speak to a doctor, book an appointment...</Card.Link>
                         </Card.Body>
                         <Card.Footer>
                             <small className="text-muted">Our virtual consultation is top notch!</small>
@@ -76,7 +80,7 @@ const PatientsPortal = (props) => {
                         </Card.Footer>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={Tele} />
+                        <Card.Img variant="top" src={todo2} />
                         <Card.Body>
                             <Card.Title>Keep track of appointments</Card.Title>
                             <Card.Text>
