@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, ListGroup, ListGroupItem, Row, Col, Table, Button } from 'react-bootstrap'
+import { Card, Row, Col, Table, Button } from 'react-bootstrap'
 import Doctor from '../home/images/telemedicine-760.jpg'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
@@ -43,7 +43,7 @@ const DoctorsPortal = () => {
                 <h3>Doctors Portal</h3>
                 <Row>
                     <Col>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '36rem' }}>
                             <Card.Img variant="top" src={Doctor} />
                             <Card.Body>
                                 <Card.Title>Doctors Corner</Card.Title>
@@ -51,18 +51,13 @@ const DoctorsPortal = () => {
                                     Welcome Doctor! Ready to save some lives?
     </Card.Text>
                             </Card.Body>
-                            <ListGroup className="list-group-flush">
-                                <ListGroupItem>Cras justo odio</ListGroupItem>
-                                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                                <ListGroupItem>Vestibulum at eros</ListGroupItem>
-                            </ListGroup>
+
                             <Card.Body>
                                 <Card.Link href="/join">Chat with patient</Card.Link>
                                 <hr />
                                 <Card.Link href="/appointments">Appointments</Card.Link>
                                 <hr />
-                                <Card.Link href="/to-do-list">To-do-List</Card.Link>
-                                <hr />
+
 
                                 <Button variant="dark" onClick={handleLogout} >Logout</Button>
                             </Card.Body>

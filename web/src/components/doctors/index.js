@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Navbar, Nav, Card } from 'react-bootstrap';
+import { Container, Navbar, Nav, Card, Row, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import Doctor from '../home/images/telemedicine-760.jpg'
 import Login from './Login';
@@ -112,14 +112,27 @@ const Doctors = (props) => {
                         <Nav.Link onClick={navigateTo("/signUp")}>Sign Up</Nav.Link>
                     </Nav>
                 </Navbar>
-                <Card>
-                    <Card.Img variant="top" src={Doctor} />
-                    <Card.Body>
-                        <Card.Title>Doctors' login</Card.Title>
-                        <Card.Text>
-                            Hello Doctor! Welcome to ArthuRx! Please login to access your portal.
+                <Row>
+                    <Col>
+                        <Card>
+                            <Card.Img variant="top" src={Doctor} />
+                            <Card.Body>
+                                <Card.Title>Doctors' login</Card.Title>
+                                <Card.Text>
+                                    Hello Doctor! Welcome to ArthuRx! Please login to access your portal.
       </Card.Text>
 
+
+
+
+
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">Our virtual consultation is top-notch!</small>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col>
                         <Login
                             email={email}
                             setEmail={setEmail}
@@ -133,14 +146,9 @@ const Doctors = (props) => {
                             passwordError={passwordError}
                         />
 
+                    </Col>
+                </Row>
 
-
-
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Our virtual consultation is top-notch!</small>
-                    </Card.Footer>
-                </Card>
             </Container>
         </div>
     )

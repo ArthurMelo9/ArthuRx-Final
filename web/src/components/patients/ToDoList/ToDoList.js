@@ -111,7 +111,7 @@ class TodoList extends Component {
                             />
                         </Table>
                     </div>
-                    <Card.Link href="/doctorsPortal">Back to dooctors portal</Card.Link>
+                    <Card.Link href="/patientsPortal">Back to Patients' Portal</Card.Link>
                 </Container>
             </div>
         )

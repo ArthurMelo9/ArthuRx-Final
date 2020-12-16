@@ -78,41 +78,44 @@ const BMI = (props) => {
                     <Col>
                         <Card>
                             <Card.Img variant="top" src={Pic} />
-                            <Card.Body>
-                                <Card.Text>
-                                    <Input
-                                        placeholder="Enter height in cm"
-                                        handleChange={handleHeightChange}
-                                        value={height}
-                                        label="Height"
-                                    />
 
-                                    <Input
-                                        placeholder="Enter weight in kg"
-                                        handleChange={handleWeightChange}
-                                        value={weight}
-                                        label="Weight"
-                                    />
-
-
-
-
-
-                                    <Buttons onClick={computeBmi} label="Calculate" />
-                                    {
-                                        isNaN(bmi) ? null : <h3>
-                                            <Badge variant="secondary">Your BMI = {bmi} </Badge>
-                                        </h3>
-                                    }
-
-                                    <h3>{bmiClass} </h3>
-
-                                </Card.Text>
-                            </Card.Body>
                             <Button variant="dark" href='/patients' >Go to Patients login page</Button>
                         </Card>
 
 
+                    </Col>
+                    <Col>
+                        <Card.Body>
+                            <Card.Text>
+                                <Input
+                                    placeholder="Enter height in cm"
+                                    handleChange={handleHeightChange}
+                                    value={height}
+                                    label="Height"
+                                />
+
+                                <Input
+                                    placeholder="Enter weight in kg"
+                                    handleChange={handleWeightChange}
+                                    value={weight}
+                                    label="Weight"
+                                />
+
+
+
+
+
+                                <Buttons onClick={computeBmi} label="Calculate" />
+                                {
+                                    isNaN(bmi) ? null : <h3>
+                                        <Badge variant="secondary">Your BMI = {bmi} </Badge>
+                                    </h3>
+                                }
+
+                                <h3>{bmiClass} </h3>
+
+                            </Card.Text>
+                        </Card.Body>
                     </Col>
                 </Row>
 

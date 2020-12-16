@@ -42,7 +42,7 @@ const PatientsPortal = (props) => {
                         <Nav.Link onClick={navigateTo("/signUp")}>Sign Up</Nav.Link>
                     </Nav>
                 </Navbar>
-                <h3>Patient sPortal</h3>
+                <h3>Patients Portal</h3>
 
                 <CardDeck>
                     <Card>
@@ -50,12 +50,11 @@ const PatientsPortal = (props) => {
                         <Card.Body>
                             <Card.Title>Speak to a doctor</Card.Title>
                             <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                                Our doctors are just a call away...
                          </Card.Text>
                             <Card.Link href="#"></Card.Link>
                             <hr />
-                            <Card.Link href="#">Speak to a doctor</Card.Link>
+                            <Card.Link href="#">Speak to a doctor, book an appointment...</Card.Link>
                         </Card.Body>
                         <Card.Footer>
                             <small className="text-muted">Our virtual consultation is top notch!</small>
@@ -66,12 +65,11 @@ const PatientsPortal = (props) => {
                         <Card.Body>
                             <Card.Title>Spot on diagnosis!</Card.Title>
                             <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                                Have you tried our virtual consulting rooms?
                          </Card.Text>
                             <Card.Link href="#"></Card.Link>
                             <hr />
-                            <Card.Link href="/join">Chat with a doctor in  a consulting room</Card.Link>
+                            <Card.Link href="/join">Enter chat room</Card.Link>
                         </Card.Body>
                         <Card.Footer>
                             <small className="text-muted">Our virtual consultation is top notch!</small>
@@ -80,14 +78,13 @@ const PatientsPortal = (props) => {
                     <Card>
                         <Card.Img variant="top" src={Tele} />
                         <Card.Body>
-                            <Card.Title>Want to see the doctor in person?</Card.Title>
+                            <Card.Title>Keep track of appointments</Card.Title>
                             <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                                Take notes of appointments and things you'd want to do to stay fit
                          </Card.Text>
                             <Card.Link href="#"></Card.Link>
                             <hr />
-                            <Card.Link href="#">Book an appointment</Card.Link>
+                            <Card.Link href="/to-do-list">To do list</Card.Link>
                         </Card.Body>
                         <Card.Footer>
                             <small className="text-muted">Our virtual consultation is top notch!</small>

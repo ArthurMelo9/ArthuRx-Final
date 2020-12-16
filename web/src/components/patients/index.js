@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import fire from './fire'
 
-import { Navbar, Nav, Container, Card, Button } from 'react-bootstrap'
+import { Navbar, Nav, Container, Card, Button, Row, Col } from 'react-bootstrap'
 import Login from './Login';
 import Cartoon from '../home/images/cartoon.jpg'
 
@@ -112,16 +112,29 @@ const Patients = (props) => {
                         <Nav.Link onClick={navigateTo("/signUp")}>Sign Up</Nav.Link>
                     </Nav>
                 </Navbar>
-                <Card>
-                    <Card.Img variant="top" src={Cartoon} />
+                <Row>
+                    <Col>
+                        <Card>
+                            <Card.Img variant="top" src={Cartoon} />
 
-                    <Card.Body>
-                        <Card.Title>Patients' login</Card.Title>
-                        <Card.Text>
-                            Hello, welcome to ArthuRx! We will make sure you don't leave here
-                            the same. Kindly log in to connect with your doctor.
+                            <Card.Body>
+                                <Card.Title>Patients' login</Card.Title>
+                                <Card.Text>
+                                    Hello, welcome to ArthuRx! We will make sure you don't leave here
+                                    the same. Kindly log in to connect with your doctor.
       </Card.Text>
 
+
+
+
+                            </Card.Body>
+                            <Button variant="dark" href="/freeService" >Click here for a free BMI check</Button>
+                            <Card.Footer>
+                                <small className="text-muted">Our virtual consultation is top-notch!</small>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col>
                         <Login
                             email={email}
                             setEmail={setEmail}
@@ -136,15 +149,8 @@ const Patients = (props) => {
                         />
 
 
-
-
-                    </Card.Body>
-                    <Button variant="dark" href="/freeService" >Click here for a free BMI check</Button>
-                    <Card.Footer>
-                        <small className="text-muted">Our virtual consultation is top-notch!</small>
-                    </Card.Footer>
-                </Card>
-
+                    </Col>
+                </Row>
             </Container>
         </div>
     )

@@ -17,7 +17,7 @@ import DoctorsPortal from './components/doctors/DoctorsPortal';
 import PatientsPortal from './components/patients/PatientsPortal';
 /*import Chat from './Chat';*/
 
-import TodoList from './components/doctors/ToDoList/ToDoList';
+import TodoList from './components/patients/ToDoList/ToDoList';
 import Chat from './components/chatRoom/components/Chat/Chat';
 import SignIn from './components/chatRoom/components/Join/Join';
 import Appointments from './components/Appointments/Appointments';
