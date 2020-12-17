@@ -26,7 +26,7 @@ const Chat = ({ location }) => {
     setRoom(roomParam);
 
     const ref = fire.firestore().collection('chats').doc(roomParam)
-    
+
     const unsubscribe = ref.onSnapshot((doc) => {
       if (!doc.exists) {
         return;
@@ -67,10 +67,12 @@ const Chat = ({ location }) => {
 
       if (message) {
         const ref = fire.firestore().collection('chats').doc(room);
-        await ref.set({ messages: [
-          ...messages,
-          { user: name, text: message }
-        ]}, { merge: true });
+        await ref.set({
+          messages: [
+            ...messages,
+            { user: name, text: message }
+          ]
+        }, { merge: true });
         setMessage('');
       }
     } catch (error) {
